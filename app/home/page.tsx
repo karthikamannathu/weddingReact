@@ -1,17 +1,12 @@
 import Link from 'next/link'
 import React from 'react'
-import Services from '../pages/services/page'
-import Vendor from '../pages/vendor/page'
-import Vennu from '../pages/vennu_section/page'
-import Invitation from '../pages/e-invitation/page'
-import Navbar from '../navbar/page'
-import Footer from '../footer/page'
+
+
 function Home() {
   return (
-    
-    <section className=" bg" id="home">
-       <Navbar/>
-        <form action="#">
+  
+    <section className="home" id="">
+     <form action="#">
             <div className="search-box">
                 <h1>Your Wedding,Your Way</h1>
                 <p>Find the best wedding vendors with thousands of trusted reviews</p>
@@ -33,17 +28,13 @@ function Home() {
         </select>
                 <button className="btn">Search</button>
             </div>
-            <img src='/ASSETS/back-1.jpg'></img>
+            
         
 
-        
-      <Services/>
-      <Vendor/>
-      <Vennu/>
-      <Invitation/>
-      <Footer/>
-      </form>
-    </section>
+            </form>
+            </section>
+      
+     
   )
 }
 

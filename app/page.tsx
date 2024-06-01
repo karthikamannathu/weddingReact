@@ -1,10 +1,18 @@
 import Image from "next/image";
+import Services from "./pages/services/page";
+import Vendor from "./pages/vendor/page";
+import Vennu from "./pages/vennu_section/page";
+import Invitation from "./pages/e-invitation/page";
+import Home from "./home/page";
 
-export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div>
-      </div>
-    </main>
+export default function Main() {
+  return (<>
+  <Home/>
+    <Services/>
+    <Vendor/>
+    <Vennu/>
+    <Invitation/>
+  
+    </>
   );
 }

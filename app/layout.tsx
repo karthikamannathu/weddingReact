@@ -6,6 +6,8 @@ import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import Home from "./page";
 import Provider from "./provider";
+import Footer from "./footer/page";
+import Navbar from "./navbar/page";
 
 config.autoAddCss = false
 
@@ -25,13 +27,16 @@ export default function RootLayout({
   return (
     <html lang="en">
          
-      <Provider>
+      {/* <Provider> */}
       <body className={inter.className}>
-   
-        {children}
-       <Home/> 
+      {children}
+       
+    <Navbar/>
+  
+       <Footer/>
       </body>
-      </Provider>
+      
+      {/* </Provider> */}
     </html>
   );
 }
